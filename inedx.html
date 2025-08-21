@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>光輝八月餐敘邀請</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            font-family: 'Noto Sans TC', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .invitation-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(255,255,255,0.5);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .invitation-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff9a9e, #fecfef, #fecfef, #ffecd2, #fcb69f);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #7f8c8d;
+            font-weight: 300;
+        }
+        
+        .content {
+            margin-bottom: 30px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 107, 107, 0.08);
+            border-radius: 12px;
+            border-left: 4px solid #ff6b6b;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #2c3e50;
+            min-width: 60px;
+            margin-right: 15px;
+            font-size: 16px;
+        }
+        
+        .info-value {
+            color: #34495e;
+            flex: 1;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        .date-highlight {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        
+        .address {
+            font-size: 15px;
+        }
+        
+        .date-highlight:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+        }
+        
+        .info-value a:hover {
+            color: #ff6b6b !important;
+        }
+        
+        .call-to-action {
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fecfef);
+            color: #8b4513;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.25);
+        }
+        
+        .call-to-action-text {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .call-to-action-sub {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .hosts {
+            text-align: right;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+        
+        .hosts-label {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .hosts-names {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            letter-spacing: 2px;
+        }
+        
+        .decoration {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(255, 154, 158, 0.1));
+            top: -50px;
+            right: -50px;
+        }
+        
+        .decoration2 {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(254, 207, 239, 0.2), rgba(255, 236, 210, 0.15));
+            bottom: -30px;
+            left: -30px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .invitation-card {
+                padding: 25px;
+            }
+            
+            .title {
+                font-size: 24px;
+            }
+            
+            .info-item {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .info-label {
+                min-width: auto;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+        <div class="decoration"></div>
+        <div class="decoration2"></div>
+        
+        <div class="header">
+            <div class="title">光輝八月餐敘邀請</div>
+            <div class="subtitle">✨ 共享美好時光 ✨</div>
+        </div>
+        
+        <div class="content">
+            <div class="info-item">
+                <div class="info-label">📅 日期</div>
+                <div class="info-value">
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E5%85%89%E8%BC%9D%E5%85%AB%E6%9C%88%E9%A4%90%E6%95%98&dates=20250823T100000Z/20250823T130000Z&details=%E5%8F%B0%E4%B8%AD%E4%B8%8A%E6%B5%B7%E9%99%B8%E5%AE%B6%E5%98%B4%E6%B1%9F%E6%B5%99%E9%A4%90%E5%BB%B3%20%E6%99%9A%E4%B8%8A6:00&location=%E5%8F%B0%E4%B8%AD%E5%B8%82%E8%A5%BF%E5%B1%AF%E5%8D%80%E8%8F%AF%E7%BE%8E%E8%A5%BF%E8%A1%97%E4%BA%8C%E6%AE%B5309%E8%99%9F" target="_blank" style="text-decoration: none; color: inherit;">
+                        <span class="date-highlight" style="cursor: pointer; transition: all 0.3s ease;">2025年8月23日</span>
+                    </a>
+                    <br>
+                    <small style="color: #7f8c8d;">農曆七月初一 (星期六) - 點擊加入 Google 日曆</small>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">🕕 時間</div>
+                <div class="info-value">晚上 6:00 開始</div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">🏮 地點</div>
+                <div class="info-value">
+                    <strong>台中上海陸家嘴江浙餐廳</strong>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">📍 地址</div>
+                <div class="info-value address">
+                    <a href="https://maps.google.com/maps?q=%E5%8F%B0%E4%B8%AD%E5%B8%82%E8%A5%BF%E5%B1%AF%E5%8D%80%E8%8F%AF%E7%BE%8E%E8%A5%BF%E8%A1%97%E4%BA%8C%E6%AE%B5309%E8%99%9F" target="_blank" style="text-decoration: none; color: #34495e; transition: color 0.3s ease;">
+                        台中市西屯區華美西街二段309號
+                    </a><br>
+                    <small style="color: #27ae60;">🚗 餐廳旁設有停車場 | 📍 點擊開啟 Google 地圖導航</small>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-label">📞 電話</div>
+                <div class="info-value">04-2316-5996</div>
+            </div>
+        </div>
+        
+        <div class="call-to-action">
+            <div class="call-to-action-text">歡迎踴躍參加</div>
+            <div class="call-to-action-sub">現在開始報名 🎉</div>
+        </div>
+        
+        <div class="hosts">
+            <div class="hosts-label">誠摯邀請</div>
+            <div class="hosts-names">堯堂 ・ 浤超 敬邀</div>
+        </div>
+    </div>
+</body>
+</html>
